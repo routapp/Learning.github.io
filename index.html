@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Any markup with information about your page would go into the head tag. -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="freeCodeCamp.css">
+	<!-- Import a web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+	<title>Document</title>
+</head>
+
+<body>
+	<!-- Any markup with the content of the page (what displays for a user) would go into the body tag. -->
+
+<h1 >Welcome!</h1>
+<h2 class="green-text">Hello World</h2>
+<!-- id attributes should be unique. Browsers won't enforce this -->
+<h3 id="head-line">Hello World</h3>
+<h4 class="pad-clock thin-red-border margin-clock" >Hello World</h4>
+<h5>Hello World</h5>
+<h6>Hello World</h6>
+<p>all HTML tags are written in lowercase</p>
+<main>
+
+	<header>
+		<nav id="navbar">
+			<!-- Lock an Element to the Browser Window with Fixed Positioning -->
+			<!-- KnowHow:Create a Bulleted Unordered List | <ul>-unordered list, <ol>ordered list -->
+			<ul class="green-text">
+				<li>Me2We</li>
+				<li>printCals</li>
+				<li>dishacards.com</li>
+				<li>printindia.one</li>
+				<li>LearnWeb</li>
+			</ul>
+		</nav>
+	</header>
+	<p>I shift up when the #navbar is fixed to the browser window.</p>
+
+		<!-- weblink: https://awik.io/generate-random-images-unsplash-without-using-api/ -->
+		<!-- apply multiple classes to an element | <img class="class1 class2"> -->
+		<img class="image-100 thin-red-border" src="https://source.unsplash.com/random/100×100/?fruit" alt="randomFruits">
+
+		<!-- KnowHow:External Pages with Anchor Elements -->
+		<a href="https://awik.io/generate-random-images-unsplash-without-using-api/" target="_blank">External Pages with Anchor Elements</a>
+
+		<!-- KnowHow:Nest an Anchor Element within a Paragraph-->
+		<p>Nest an Anchor Element <a target="_blank" href="#">within</a> a Paragraph</p>
+
+		<!-- KnowHow:Turn an Image into a Link -->
+		<a href="#"><img class="image-100" src="https://source.unsplash.com/random" alt="random"></a>
+
+		<!-- KnowHow:Create a Bulleted Unordered List | <ul>-unordered list, <ol>ordered list -->
+		<ul class="green-text">
+			<li>Me2We</li>
+			<li>printCals</li>
+			<li>dishacards.com</li>
+			<li>printindia.one</li>
+			<li>LearnWeb</li>
+		</ul>
+		<ol>
+			<li>Me2We</li>
+			<li>printCals</li>
+			<li>dishacards.com</li>
+			<li>printindia.one</li>
+			<li>LearnWeb</li>
+		</ol>
+
+		<!-- KnowHow: input, placeholder, form with action, submit button, required, value(sent to the server) -->
+		<form action="#">
+
+			<!-- Nest Many Elements within a Single div Element -->
+
+		<div class="silver-background">
+
+			<input type="text" name="name" placeholder="input" required>
+
+			<!-- KnowHow: radio button | wrapping an input element inside of a label element. All related radio buttons should have the same name attribute to create a radio button group. -->
+			<label>
+				<input type="radio" name="radio-button">Me2We
+			</label>
+			<label>
+				<input type="radio" name="radio-button">printCals
+			</label>
+
+			<!-- KnowHow: for attribute on the label element, with a value that matches the value of the id attribute of the input element -->
+			<input type="radio" name="radio-button2" id="Me2We2">
+			<label for="Me2We2">Me2We</label>
+			<input type="radio" name="radio-button2" id="printCals2">
+			<label for="printCals2">printCals</label>
+
+			<!-- KnowHow: nest the input element within the label tags -->
+			<label for="Me2We3">
+				<input type="radio" name="radio-button3" id="Me2We3">Me2We
+			</label>
+			<input type="radio" name="radio-button3" id="printCals3">
+			<label for="printCals3">printCals</label>
+
+			<!-- KnowHow: wrap an input element inside of a label element having same name attribute for all related checkbox inputs-->
+			<label for="akhrot"><input id="akhrot" type="checkbox" name="dryFruits">Akhrot</label>
+			<!-- KnowHow: checked by default-->
+			<label for="badam"><input id="badam" type="checkbox" name="dryFruits" value="badam" checked>Badam</label>
+
+		</div>
+
+			<button type="submit">submit</button>
+		</form>
+
+<!-- Applied Visual Design -->
+<div class="fullCard">
+  <div class="cardContent">
+    <div class="cardText">
+      <h4>Google</h4>
+      <!-- Create a Horizontal Line Using the hr Element -->
+      <hr>
+      <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>
+    </div>
+    <div class="cardLinks">
+      <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
+      <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
+    </div>
+  </div>
+</div>
+<!-- The clear property specifies what should happen with the element that is next to a floating element. -->
+<!-- div2 {clear: left;} none, left, right, both, inherit-->
+
+<div class="clearfix"></div>
+	<article>
+	<!-- /*TRACE OUT. SOMETHING NOT WORKING*/ -->
+	<!-- Change the Position of Overlapping Elements with the z-index Property -->
+		<!-- <div class="box first"></div>
+		<div class="box second"></div> -->
+	</article>
+
+	<section>
+		<!-- Lock an Element to its Parent with Absolute Positioning -->
+		<form id="searchbar">
+			<label for="search" >Search:</label>
+			<input type="search" id="search" name="search">
+			<input type="submit" name="submit" value="Go!" >
+		</form>
+		<h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1>
+	</section>
+
+<!-- Push Elements Left or Right with the float Property -->
+<!-- /*TRACE OUT. SOMETHING NOT WORKING*/ -->
+	<br>
+	
+	<section id="left">
+		<h2>Content</h2>
+		<p>Good stuff</p>
+	</section>
+	<aside id="right">
+		<h2>Sidebar</h2>
+		<p>Links</p>
+	</aside>
+	
+<br>
+<div class="clearfix"></div>
+	<!-- <div class="margin-center"></div> -->
+<!-- <div class="margin-center overlap"></div> -->
+
+<br><br>
+<section>
+<div class="box first">first</div>
+<div class="box second">second</div>
+<h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1><h1>test</h1>
+</section>
+
+
+
+
+<div class="complementary-color1"> Aum Namay Shivay</div>
+
+<div class="color-gradient"></div>
+<div class="repeat-gradient"></div>
+
+<!-- /*transform property, along with its scale() function  
+	to Change the Size of an ElementPassed*/ -->
+<div class="ball" id= "ball1"></div>
+<div class="ball" id= "ball2"></div>
+
+<hr id="goto-top">
+<!-- Flex Box -->
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
+	
+	<video></video>
+
+	<footer></footer>
+
+		<!-- KnowHow:assign a link's href attribute to a hash symbol # plus the value of the id attribute for the element that you want to internally link to -->
+		<a href="#goto-top">TOP</a>
+</main>
+
+</body>
+</html>
